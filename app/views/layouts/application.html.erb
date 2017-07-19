@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="balanceBureau">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>BalanceBureau</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+    <link rel="icon" href="assets/favicon.ico">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- iphone icons -->
+    <link href="assets/Icon@2x.png"       rel="apple-touch-icon" sizes="114x114"/>
+    <link href="assets/Icon-Small.png"    rel="apple-touch-icon" sizes="29x29"/>
+    <link href="assets/Icon-Small-50.png" rel="apple-touch-icon" sizes="50x50"/>
+    <link href="assets/Icon.png"          rel="apple-touch-icon" sizes="57x57"/>
+    <link href="assets/Icon-72.png"       rel="apple-touch-icon" sizes="72x72"/>    
+    
+
+    <!-- android icons -->
+    <link href="assets/hdpi.png"   rel="icon" sizes="72x72"     />
+    <link href="assets/mdpi.png"   rel="icon" sizes="48x48"     />
+    <link href="assets/xxhdpi.png" rel="icon" sizes="144x144"  />
+    
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.10/d3.min.js"></script>
+    <%= javascript_include_tag 'application' %>
+    <script src="https://maps.google.com/maps/api/js?sensor=false&language=en&key= AIzaSyBuaqGLEENcqM7MHL6swOohXPTDeGRXZM0"></script>
+  </head>
+  <body ng-controller="AppCtrl">
+  	<div ng-view></div>
+  </body>
+    <!-- imp code
+    <ul rn-carousel rn-carousel-index="carouselIndex" rn-carousel-controls="true">
+      <li><p>slide #1 wo way binding integer to control the carousel position (0-indexed</p></li>
+      <li >slide #2 wo way binding integer to control the carousel position (0-indexed</li>
+      <li>slide #3 wo way binding integer to control the carousel position (0-indexed</li>
+    </ul> -->
+</html>
